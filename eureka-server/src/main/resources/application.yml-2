@@ -12,6 +12,7 @@ eureka:
   instance:
     hostname: eureka-7901
   client:
+    #设置服务注册中心的URL :守望相助，配置对方的
     service-url:
       defaultZone: http://localhost:7902/eureka/
 
@@ -24,5 +25,6 @@ eureka:
   instance:
     hostname: eureka-7902
   client:
+    #设置服务注册中心的URL :守望相助，配置对方的
     service-url:
       defaultZone: http://localhost:7901/eureka/
