@@ -1,0 +1,28 @@
+#高可用2个节点
+spring:
+  application:
+    name: eureka
+
+---
+spring:
+  profiles: 7901
+server:
+  port: 7901
+eureka:
+  instance:
+    hostname: eureka-7901
+  client:
+    service-url:
+      defaultZone: http://localhost:7902/eureka/
+
+---
+spring:
+  profiles: 7902
+server:
+  port: 7902
+eureka:
+  instance:
+    hostname: eureka-7902
+  client:
+    service-url:
+      defaultZone: http://localhost:7901/eureka/
