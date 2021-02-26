@@ -10,7 +10,7 @@ eureka:
       defaultZone: http://localhost:7900/eureka # 配置eureka server地址，用于注册服务和获取服务
   server:
     #关闭自我保护
-    enable-self-preservation: false
+    enable-self-preservation: false # 控制控制台会弹出红色警告语句
     #清理间隔时间
     eviction-interval-timer-in-ms: 5000
 logging:

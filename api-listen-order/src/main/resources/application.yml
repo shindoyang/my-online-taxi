@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: api-listen-order
+server:
+  port: 8100
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7900/eureka/
